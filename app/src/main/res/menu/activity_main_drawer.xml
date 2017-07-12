@@ -7,7 +7,7 @@
             android:icon="@drawable/Coding"
             android:title="Cipher" />
         <item
-            android:id="@+id/nav_game "
+            android:id="@+id/nav_game"
             android:icon="@android:drawable/ic_media_play"
             android:title="Game" />
     </group>
