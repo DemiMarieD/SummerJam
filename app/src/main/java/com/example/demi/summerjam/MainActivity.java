@@ -1,10 +1,7 @@
 package com.example.demi.summerjam;
 
-import android.app.Fragment;
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,9 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    ImageButton soundBtn;
+    MediaPlayer sound;
+    ImageView tanz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,24 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        tanz = (ImageView) findViewById(R.id.tanzImg);
+        sound = MediaPlayer.create(getApplicationContext(), R.raw.song);
+
+        soundBtn = (ImageButton) findViewById(R.id.soundBtn);
+        soundBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(sound.isPlaying()){
+                    sound.stop();
+                    tanz.setVisibility(View.INVISIBLE);
+                }
+                else {
+                    sound.start();
+                    tanz.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
