@@ -3,7 +3,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/titel_tv"
+        android:id="@+id/Ceasar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
@@ -14,11 +14,34 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/click_b"
+        android:id="@+id/cipher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/titel_tv"
-        android:layout_below="@+id/titel_tv"
+        android:layout_alignStart="@+id/Ceasar"
+        android:layout_below="@+id/Ceasar"
         android:layout_marginTop="51dp"
-        android:text="Click Me " />
+        android:text="Cipher" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cipher"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="Enter The Text Here"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputText"
+        android:layout_below="@+id/inputText"
+        android:layout_marginTop="34dp"
+        android:contentDescription="Enter The Key"
+        android:ems="10"
+        android:inputType="textPersonName" />
 </RelativeLayout>
