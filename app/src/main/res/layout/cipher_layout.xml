@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Coding">
+    android:background="@drawable/coding">
 
     <TextView
         android:id="@+id/Ceasar"
@@ -30,14 +31,15 @@
         android:id="@+id/inputText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/cipher"
-        android:layout_marginEnd="72dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        android:contentDescription="@string/Enter_Text"
         android:ems="10"
+        android:hint="@string/Enter_Text"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
 
     <EditText
         android:id="@+id/Key"
@@ -48,6 +50,9 @@
         android:layout_marginTop="34dp"
         android:contentDescription="@string/Enter_Key"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/Enter_Key"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
 
 </RelativeLayout>
