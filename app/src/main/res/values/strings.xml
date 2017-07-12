@@ -5,4 +5,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="Enter_Text">Enter your Text here</string>
+    <string name="Enter_Key">Enter your Key</string>
 </resources>

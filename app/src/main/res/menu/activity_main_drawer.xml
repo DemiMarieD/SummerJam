@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_cipher"
-            android:icon="@android:drawable/ic_lock_lock"
+            android:icon="@drawable/Coding"
             android:title="Cipher" />
         <item
             android:id="@+id/nav_game "

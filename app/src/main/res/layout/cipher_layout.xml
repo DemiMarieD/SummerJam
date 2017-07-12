@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Coding">
 
     <TextView
         android:id="@+id/Ceasar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="77dp"
         android:text="Cipher"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/cipher"
@@ -19,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Ceasar"
         android:layout_below="@+id/Ceasar"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="68dp"
         android:text="Cipher" />
 
     <EditText
@@ -30,9 +34,10 @@
         android:layout_below="@+id/cipher"
         android:layout_marginEnd="72dp"
         android:layout_marginTop="75dp"
-        android:contentDescription="Enter The Text Here"
+        android:contentDescription="@string/Enter_Text"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/Key"
@@ -41,7 +46,8 @@
         android:layout_alignStart="@+id/inputText"
         android:layout_below="@+id/inputText"
         android:layout_marginTop="34dp"
-        android:contentDescription="Enter The Key"
+        android:contentDescription="@string/Enter_Key"
         android:ems="10"
         android:inputType="textPersonName" />
+
 </RelativeLayout>
