@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_game) {
             fragmentManager.beginTransaction().replace(R.id.contentFrame, new GameFragment()).commit();
             // HAndel Gameaction
+        }else if (id == R.id.nav_mole) {
+            fragmentManager.beginTransaction().replace(R.id.contentFrame, new MoleGame()).commit();
+            // HAndel Gameaction
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
